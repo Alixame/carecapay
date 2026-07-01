@@ -29,6 +29,7 @@ export default function RootLayout({
         <html
             lang="pt-BR"
             className={`${display.variable} ${sans.variable} scroll-smooth`}
+            suppressHydrationWarning
         >
             <body className="min-h-screen bg-[#F3EEE4] font-(--font-careca-sans) text-[#19150F] antialiased selection:bg-[#FFD8C4]">
                 {children}

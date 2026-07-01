@@ -18,7 +18,8 @@ export type IconName =
     | "play"
     | "react"
     | "refresh"
-    | "terminal";
+    | "terminal"
+    | "flaskConical";
 
 type IconProps = {
     name: IconName;
@@ -186,6 +187,14 @@ export function Icon({ name, className }: IconProps) {
                 <svg {...props}>
                     <path d="m16 18 6-6-6-6" />
                     <path d="m8 6-6 6 6 6" />
+                </svg>
+            );
+        case "flaskConical":
+            return (
+                <svg {...props}>
+                    <path d="M6 2h12l-6 10L6 2z" />
+                    <path d="M6 2v4a6 6 0 0 0 12 0V2" />
+                    <path d="M6 6h12" />
                 </svg>
             );
     }
