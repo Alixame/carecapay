@@ -5,7 +5,7 @@ export function HeroSection() {
     return (
         <section
             id="hero-section"
-            className="h-[80dvh] mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:px-0 py-16 lg:grid-cols-2 lg:gap-8 lg:py-24"
+            className="h-[80dvh] mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:px-0 lg:py-16 lg:grid-cols-2 lg:gap-8 lg:py-24"
         >
             <div className="max-w-xl">
                 <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
@@ -28,7 +28,7 @@ export function HeroSection() {
                     </a>
                 </div>
 
-                <div className="mt-6 flex items-center gap-2 text-sm text-[#5C564C]">
+                <div className="mt-6 flex items-center justify-center lg:justify-start gap-2 text-sm text-[#5C564C]">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#16A34A]/10 text-[#16A34A]">✓</span>
                     Ambiente de testes 100% gratuito
                 </div>
