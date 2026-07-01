@@ -24,7 +24,7 @@ const PAYMENT_METHODS = [
 
 export function DashboardMockup() {
     return (
-        <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-2xl shadow-black/20">
+        <div className="overflow-hidden size-full rounded-2xl border border-black/5 bg-white  shadow-black/20">
             {/* Top bar */}
             <div className="flex items-center justify-between border-b border-[#F0EBE1] px-4 py-2.5">
                 <div className="flex items-center gap-1.5">

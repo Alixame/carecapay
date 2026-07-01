@@ -12,9 +12,17 @@ const DOCS: Array<{ icon: IconName; title: string; text: string }> = [
 
 export function DocsSection() {
     return (
-        <section className="bg-[#FDFDFD] px-6 py-10 lg:px-0">
-            <div className="mx-auto max-w-7xl grid gap-10 lg:grid-cols-[0.8fr_2fr]">
-                <div>
+        <section className="relative overflow-hidden bg-[#FDFDFD] px-6 py-10 lg:px-0">
+            <svg viewBox="0 0 105 297" className="pointer-events-none absolute -right-6 top-1/2 z-0 hidden h-64 w-auto -translate-y-1/2 opacity-25 lg:block" fill="none">
+                <path d="M0.345459 295.997C40.1788 281.331 116.145 231.197 101.345 147.997C82.8455 43.9975 13.8455 59.9975 9.84546 79.4975C5.84546 98.9975 38.3455 126.498 72.3455 102.998C99.5455 84.1975 94.3455 46.1642 88.3455 29.4976C83.3455 20.8309 66.0455 2.99756 36.8455 0.997559" stroke="#FE7B08" strokeWidth="2" strokeDasharray="10 10" />
+            </svg>
+
+            <svg viewBox="0 0 223 95" className="pointer-events-none absolute -top-8 left-6 z-0 hidden h-14 w-32 opacity-20 lg:block" fill="none">
+                <path d="M0 94.0087C17 94.0087 52.0292 86.2165 71 69.0087C92.5 49.5068 101.5 8.00815 65 1.50874C24.668 -5.67303 10.5971 65.0454 84 78.5087C168.5 94.0074 209 34.0088 222 8.00883" stroke="#FEAF67" strokeWidth="2" strokeDasharray="10 10" />
+            </svg>
+
+            <div className="relative mx-auto max-w-7xl grid gap-10 lg:grid-cols-[0.8fr_2fr]">
+                <div className="relative">
                     <h2 className={`[font-family:var(--font-careca-display)] text-3xl font-extrabold leading-tight tracking-tight text-[#19150F] hover:underline`}>
                         Documentação que é um show à parte
                     </h2>

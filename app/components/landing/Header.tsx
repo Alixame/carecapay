@@ -8,8 +8,6 @@ const NAV_LINKS = [
     { label: "Para quem", href: "#para-quem" },
     { label: "Taxas", href: "#taxas" },
     { label: "Documentação", href: "#docs" },
-    { label: "Blog", href: "#blog" },
-    { label: "Login", href: "#login" },
 ];
 
 export function Header() {
@@ -44,13 +42,22 @@ export function Header() {
                     ))}
                 </nav>
 
-                <div className="flex items-center gap-3">
+
+                <div className="flex items-center gap-5">
+                    <a
+                        href="#login"
+                        className="text-sm font-semibold text-[#3B342B] transition-colors hover:text-[#FF7A00]"
+                    >
+                        Login
+                    </a>
+
                     <a
                         href="#começar"
                         className="hidden rounded-xl bg-[#FF7A00] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#FF8A00] sm:inline-flex"
                     >
                         Começar agora →
                     </a>
+
                     <button
                         type="button"
                         aria-label="Abrir menu"

@@ -11,13 +11,17 @@ const BUSINESS: Array<{ icon: IconName; title: string; text: string }> = [
 
 export function BusinessSection() {
     return (
-        <section id="para-quem" className="bg-[#F3EEE4] px-6 lg:px-0 py-10 overflow-hidden">
+        <section id="para-quem" className="relative bg-[#F3EEE4] px-6 lg:px-0 py-10 overflow-hidden">
+            <svg viewBox="0 0 105 297" className="pointer-events-none absolute -left-8 top-0 z-0 hidden h-56 w-auto rotate-3 opacity-20 lg:block" fill="none">
+                <path d="M0.345459 295.997C40.1788 281.331 116.145 231.197 101.345 147.997C82.8455 43.9975 13.8455 59.9975 9.84546 79.4975C5.84546 98.9975 38.3455 126.498 72.3455 102.998C99.5455 84.1975 94.3455 46.1642 88.3455 29.4976C83.3455 20.8309 66.0455 2.99756 36.8455 0.997559" stroke="#FE7B08" strokeWidth="2" strokeDasharray="10 10" />
+            </svg>
+
             <div className="relative mx-auto max-w-7xl grid items-center gap-4 lg:grid-cols-8">
-                <div className="col-span-3">
+                <div className="relative col-span-3">
                     <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
                         Para negócios digitais
                     </p>
-                    
+
                     <h2 className={`[font-family:var(--font-careca-display)] mt-4 text-3xl font-extrabold leading-tight tracking-tight text-[#19150F] hover:underline`}>
                         Mais que um gateway, <br/> um parceiro de crescimento.
                     </h2>
@@ -54,7 +58,7 @@ export function BusinessSection() {
                 </div>
 
                 {/* perninha do balao em forma de triângulo */}
-                <div className="absolute bottom-29 right-35 rotate-115 lg:top-3 lg:right-10 z-11 size-3 lg:size-6 lg:rotate-45 bg-white" />
+                <div className="absolute bottom-[16.4%] right-35 rotate-115 lg:top-3 lg:right-10 z-11 size-3 lg:size-6 lg:rotate-45 bg-white" />
 
                 {/* Careca */}
                 <img

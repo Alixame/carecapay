@@ -3,7 +3,7 @@ import { DashboardMockup } from "./DashboardMockup";
 
 export function HeroSection() {
     return (
-        <div className="relative">
+        <div className="relative overflow-hidden">
             <svg
                 className="hero-curve"
                 viewBox="0 0 1440 120"
@@ -17,7 +17,7 @@ export function HeroSection() {
 
             <section
                 id="hero-section"
-                className="h-[80dvh] mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:px-0 lg:py-16 lg:grid-cols-2 lg:gap-8 lg:py-24"
+                className="h-dvh lg:h-[80dvh] mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:px-0 lg:py-16 lg:grid-cols-2 lg:gap-8"
             >
                 <div className="max-w-xl">
                     <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
@@ -40,7 +40,7 @@ export function HeroSection() {
                         </a>
                     </div>
 
-                    <div className="mt-6 flex items-center justify-center lg:justify-start gap-2 text-sm text-[#5C564C]">
+                    <div className="hidden mt-6 lg:flex items-center justify-center lg:justify-start gap-2 text-sm text-[#5C564C]">
                         <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#16A34A]/10 text-[#16A34A]">✓</span>
                         Ambiente de testes 100% gratuito
                     </div>
@@ -48,7 +48,7 @@ export function HeroSection() {
 
                 <div className="relative flex flex-col items-center justify-center">
                     {/* Foguete + linhas de movimento */}
-                    <div className="absolute left-0 top-4 z-30 hidden -rotate-[20deg] sm:block lg:left-6 lg:top-8">
+                    {/* <div className="absolute left-0 top-4 z-30 hidden -rotate-[20deg] sm:block lg:left-6 lg:top-8">
                         <svg viewBox="0 0 48 56" className="h-14 w-14 lg:h-16 lg:w-16" fill="none">
                             <path d="M24 4C32 10 34 22 32 32L16 32C14 22 16 10 24 4Z" fill="#fff" stroke="#19150F" strokeWidth="2.5" strokeLinejoin="round" />
                             <circle cx="24" cy="18" r="4" fill="#FFD37A" stroke="#19150F" strokeWidth="2.5" />
@@ -62,35 +62,38 @@ export function HeroSection() {
                             <path d="M2 30C16 28 24 22 30 10" stroke="#FF7A00" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="2 7" />
                             <path d="M10 36C24 34 32 28 40 16" stroke="#FFB13A" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="2 7" />
                         </svg>
-                    </div>
+                    </div> */}
 
-                    {/* Sparkles / acentos */}
-                    <svg viewBox="0 0 24 24" className="absolute right-10 top-2 z-30 hidden h-6 w-6 text-[#FF7A00] sm:block" fill="currentColor">
-                        <path d="M12 0c1 8 3 11 12 12-9 1-11 4-12 12-1-8-3-11-12-12 9-1 11-4 12-12Z" />
+                    {/* Linhas tracejadas decorativas */}
+                    <svg viewBox="0 0 223 95" className="pointer-events-none absolute -bottom-10 -left-16 z-0 hidden h-16 w-40 lg:block" fill="none">
+                        <path d="M0 94.0087C17 94.0087 52.0292 86.2165 71 69.0087C92.5 49.5068 101.5 8.00815 65 1.50874C24.668 -5.67303 10.5971 65.0454 84 78.5087C168.5 94.0074 209 34.0088 222 8.00883" stroke="#FEAF67" strokeWidth="2" strokeDasharray="10 10" />
                     </svg>
 
-                    <svg viewBox="0 0 24 24" className="absolute bottom-24 left-2 z-30 hidden h-4 w-4 text-[#FFB13A] sm:block" fill="currentColor">
-                        <path d="M12 0c1 8 3 11 12 12-9 1-11 4-12 12-1-8-3-11-12-12 9-1 11-4 12-12Z" />
+                    <svg viewBox="0 0 105 297" className="pointer-events-none absolute -right-10 top-12 z-0 hidden h-64 w-auto -rotate-6 opacity-40 lg:block" fill="none">
+                        <path d="M0.345459 295.997C40.1788 281.331 116.145 231.197 101.345 147.997C82.8455 43.9975 13.8455 59.9975 9.84546 79.4975C5.84546 98.9975 38.3455 126.498 72.3455 102.998C99.5455 84.1975 94.3455 46.1642 88.3455 29.4976C83.3455 20.8309 66.0455 2.99756 36.8455 0.997559" stroke="#FE7B08" strokeWidth="2" strokeDasharray="10 10" />
                     </svg>
 
-                    <span className="absolute right-24 top-24 z-30 hidden h-2 w-2 rounded-full bg-[#FF7A00] sm:block" />
-                    <span className="absolute left-16 top-10 z-30 hidden h-1.5 w-1.5 rounded-full bg-[#FFB13A] sm:block" />
+                    <svg viewBox="0 0 223 95" className="pointer-events-none absolute left-2 top-2 z-0 hidden h-12 w-28 rotate-180 opacity-25 lg:block" fill="none">
+                        <path d="M0 94.0087C17 94.0087 52.0292 86.2165 71 69.0087C92.5 49.5068 101.5 8.00815 65 1.50874C24.668 -5.67303 10.5971 65.0454 84 78.5087C168.5 94.0074 209 34.0088 222 8.00883" stroke="#FEAF67" strokeWidth="2" strokeDasharray="10 10" />
+                    </svg>
 
                     {/* Balão de fala */}
-                    <div className="absolute right-0 top-10 z-30 hidden max-w-[190px] rounded-2xl bg-white px-4 py-3 text-center shadow-xl shadow-black/10 sm:block lg:right-2 lg:top-16">
-                        <p className="text-sm font-bold leading-snug text-[#19150F]">
-                            Menos burocracia, <span className="text-[#FF7A00]">mais integração.</span>
+                    <div className="absolute right-0 top-10 z-30 hidden max-w-70 bg-white px-5 py-2 lg:px-10 lg:py-4 -rotate-6 rounded-full border lg:border-2 border-[#F3EEE4] sm:block lg:right-74 lg:-top-95">
+                        <p className="text-xl font-extrabold text-[#19150F]">
+                            Menos burocracia, <br/><span className="text-[#FF7A00]">mais integração.</span>
                         </p>
-                        <p className="mt-2 text-xs leading-snug text-[#5C564C]">
+
+                        <p className="mt-1 text-[8px] lg:text-sm font-bold text-[#6F665A]">
                             Do jeito que <span className="font-semibold text-[#FF7A00]">careca</span> gosta!
                         </p>
-                        <span className="absolute -bottom-1.5 left-8 h-3 w-3 rotate-45 bg-white" />
+
+                        <span className="absolute -bottom-2 right-10 size-6 rotate-26 bg-white" />
                     </div>
 
                     <img
                         src={"/assets/careca-hero.png"}
                         alt="Hero Illustration"
-                        className="relative z-20 w-full max-w-lg"
+                        className="absolute z-3 w-full max-w-lg -top-46.5 lg:-top-80 pointer-events-none"
                     />
 
                     <svg
@@ -164,7 +167,7 @@ export function HeroSection() {
                         <path d="M 330 614 C 397 640 438 607 483 563" stroke="#FF8A00" strokeOpacity="0.11" strokeWidth="2" />
                     </svg>
 
-                    <div className="mt-6 w-full max-w-md lg:absolute lg:-bottom-10 lg:right-0 lg:z-10 lg:mt-0 lg:w-[82%]">
+                    <div className="w-225 h-125 hidden lg:block absolute top-10 -right-20 lg:top-[-20%] lg:-right-62 z-1">
                         <DashboardMockup />
                     </div>
                 </div>

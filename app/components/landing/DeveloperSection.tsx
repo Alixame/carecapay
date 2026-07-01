@@ -34,7 +34,11 @@ const LANGUAGES: Array<{ label: string; icon: React.ReactNode }> = [
 
 export function DeveloperSection() {
     return (
-        <section id="docs" className="bg-[#17130D] text-white overflow-hidden">
+        <section id="docs" className="relative bg-[#17130D] text-white overflow-hidden">
+            <svg viewBox="0 0 105 297" className="pointer-events-none absolute left-0 top-6 z-0 hidden h-72 w-auto rotate-6 opacity-15 lg:block" fill="none">
+                <path d="M0.345459 295.997C40.1788 281.331 116.145 231.197 101.345 147.997C82.8455 43.9975 13.8455 59.9975 9.84546 79.4975C5.84546 98.9975 38.3455 126.498 72.3455 102.998C99.5455 84.1975 94.3455 46.1642 88.3455 29.4976C83.3455 20.8309 66.0455 2.99756 36.8455 0.997559" stroke="#FEAF67" strokeWidth="2" strokeDasharray="10 10" />
+            </svg>
+
             <div className="mx-auto relative grid grid-cols-1 max-w-7xl items-center gap-12 px-6 lg:px-0 py-10 lg:grid-cols-3">
                 {/* Left */}
                 <div className="relative col-span-1">
@@ -52,12 +56,18 @@ export function DeveloperSection() {
                         API moderna, estável e fácil de integrar. Com SDKs oficiais e exemplos práticos nas principais linguagens.
                     </p>
 
-                    <a
-                        href="#docs"
-                        className="mt-8 inline-flex rounded-xl bg-[#FF7A00] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#FF8A00]"
-                    >
-                        Ver documentação
-                    </a>
+                    <div className="relative mt-8 inline-flex">
+                        <a
+                            href="#docs"
+                            className="relative inline-flex rounded-xl bg-[#FF7A00] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#FF8A00]"
+                        >
+                            Ver documentação
+                        </a>
+
+                        <svg viewBox="0 0 223 95" className="pointer-events-none absolute -bottom-14 -right-16 hidden h-10 w-24 rotate-[135deg] opacity-70 lg:block" fill="none">
+                            <path d="M0 94.0087C17 94.0087 52.0292 86.2165 71 69.0087C92.5 49.5068 101.5 8.00815 65 1.50874C24.668 -5.67303 10.5971 65.0454 84 78.5087C168.5 94.0074 209 34.0088 222 8.00883" stroke="#FEAF67" strokeWidth="2" strokeDasharray="10 10" />
+                        </svg>
+                    </div>
                 </div>
 
                 <img
