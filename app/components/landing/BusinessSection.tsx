@@ -45,22 +45,22 @@ export function BusinessSection() {
                 </div>
 
                 {/* Balão de mensagem  */}
-                <div className="absolute -top-10 -right-2 bg-white z-11 px-10 py-4 -rotate-6 rounded-full border-2 border-[#F3EEE4]">
-                    <p className={`[font-family:var(--font-careca-display)] text-lg font-extrabold leading-none text-[#19150F]`}>
+                <div className="absolute top-[77%] right-20 lg:top-[-22%] lg:-right-6 bg-white z-11 px-5 py-2 lg:px-10 lg:py-4 -rotate-6 rounded-full border lg:border-2 border-[#F3EEE4]">
+                    <p className={`[font-family:var(--font-careca-display)] text-xs lg:text-lg font-extrabold leading-none text-[#19150F]`}>
                         Careca <span className="text-[#FF7A00]">aprova</span>
                         <br />
-                        <span className="text-sm font-bold text-[#6F665A]">e seu caixa também!</span>
+                        <span className="text-[8px] lg:text-sm font-bold text-[#6F665A]">e seu caixa também!</span>
                     </p>
                 </div>
 
                 {/* perninha do balao em forma de triângulo */}
-                <div className="absolute top-2.5 right-10 z-11 h-6 w-6 rotate-45 bg-white" />
+                <div className="absolute bottom-29 right-35 rotate-115 lg:top-3 lg:right-10 z-11 size-3 lg:size-6 lg:rotate-45 bg-white" />
 
                 {/* Careca */}
                 <img
                     src="/assets/careca-business.png"
                     alt="Careca aprovando o seu negócio"
-                    className="absolute pointer-events-none -bottom-12 -right-18 w-70 z-10"
+                    className="absolute pointer-events-none -bottom-12 -right-10 lg:-right-18 w-70 z-10"
                 />
 
                 <svg className="absolute -bottom-9 left-[60%]" width="309" height="42" viewBox="0 0 409 62" fill="none" xmlns="http://www.w3.org/2000/svg">

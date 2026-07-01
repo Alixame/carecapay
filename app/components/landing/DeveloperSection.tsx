@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { Command } from "lucide-react";
 import { Icon } from "./icons";
 
 
@@ -34,20 +35,23 @@ const LANGUAGES: Array<{ label: string; icon: React.ReactNode }> = [
 export function DeveloperSection() {
     return (
         <section id="docs" className="bg-[#17130D] text-white overflow-hidden">
-            <div className="mx-auto relative grid max-w-7xl items-center gap-12 px-6 lg:px-0 py-10 lg:grid-cols-3">
+            <div className="mx-auto relative grid grid-cols-1 max-w-7xl items-center gap-12 px-6 lg:px-0 py-10 lg:grid-cols-3">
                 {/* Left */}
                 <div className="relative col-span-1">
                     <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#FF9A3C]">
                         Feito para desenvolvedores
                     </p>
+
                     <h2 className={`[font-family:var(--font-careca-display)] mt-4 text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl`}>
                         Integre uma vez.
                         <br />
                         Escale para sempre.
                     </h2>
+
                     <p className="mt-5 max-w-md text-[15px] leading-relaxed text-white/60">
                         API moderna, estável e fácil de integrar. Com SDKs oficiais e exemplos práticos nas principais linguagens.
                     </p>
+
                     <a
                         href="#docs"
                         className="mt-8 inline-flex rounded-xl bg-[#FF7A00] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#FF8A00]"
@@ -58,8 +62,8 @@ export function DeveloperSection() {
 
                 <img
                     src="/assets/careca-develop.png"
-                    alt=""
-                    className="pointer-events-none absolute -bottom-2.5 left-[49%] -translate-x-full hidden w-72.5 lg:block"
+                    alt="Careca desenvolvedor"
+                    className="pointer-events-none absolute -bottom-2.5 scale-x-[-1] lg:scale-x-[1] left-[69%] lg:left-[49%] -translate-x-full w-40 lg:w-72.5 lg:block "
                 />
 
                 {/* Right: editor + languages */}
@@ -72,7 +76,7 @@ export function DeveloperSection() {
                         </div>
                         
                         <pre className="overflow-x-auto h-[77%] px-5 py-5 text-[12.5px] leading-relaxed">
-                            <code className="[font-family:ui-monospace,SFMono-Regular,Menlo,monospace]">
+                            <code className="font-[ui-monospace,SFMono-Regular,Menlo,monospace]">
                                 <span className="text-white/40">{"// Basta importar a biblioteca"}</span>
                                 {"\n"}
                                 <span className="text-[#C792EA]">const</span>{" "}
@@ -121,12 +125,9 @@ export function DeveloperSection() {
                         </pre>
 
                         <div className="flex justify-end border-t border-white/10 px-4 py-2.5">
-                            <button
-                                type="button"
-                                className="flex items-center gap-1.5 text-xs text-white/50 transition-colors hover:text-white"
-                            >
-                                <Icon name="columns" className="h-3.5 w-3.5" /> Copiar
-                            </button>
+                            <span className="text-xs text-white/40">
+                                Copiar
+                            </span>
                         </div>
                     </div>
 

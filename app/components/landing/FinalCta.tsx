@@ -7,7 +7,7 @@ export function FinalCta() {
             <img
                 src="/assets/careca-final-cta.png"
                 alt="Careca sorrindo e apontando para o botão de criar conta"
-                className="pointer-events-none absolute -bottom-6 right-60 w-65 z-10"
+                className="pointer-events-none absolute -bottom-10 lg:-bottom-6 right-[-15dvw] lg:right-[15dvw] w-65 z-10"
             />
 
             <section id="final-cta-section" className="relative bg-linear-to-r from-[#FF7A00] to-[#FF9A2E] text-white">

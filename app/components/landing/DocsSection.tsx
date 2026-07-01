@@ -1,3 +1,4 @@
+import { MoveRightIcon } from "lucide-react";
 import { Icon, IconName } from "./icons";
 
 const DOCS: Array<{ icon: IconName; title: string; text: string }> = [
@@ -34,7 +35,12 @@ export function DocsSection() {
                                 <Icon name={doc.icon} />
                             </span>
 
-                            <h3 className="group-hover:underline mt-4 text-sm font-bold text-[#19150F]">{doc.title}</h3>
+                            
+                            <div className="flex items-center gap-2 mt-4">
+                                <h3 className="group-hover:underline text-sm font-bold text-[#19150F]">{doc.title}</h3>
+
+                                <MoveRightIcon className="group-hover:translate-x-1 transition-transform group-hover:text-[#FF7A00]" />
+                            </div>
 
                             <p className="mt-1 text-[12.5px] leading-snug text-[#6F665A]">{doc.text}</p>
                         </a>
