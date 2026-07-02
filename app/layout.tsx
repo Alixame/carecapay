@@ -43,9 +43,6 @@ export const metadata: Metadata = {
         canonical: "https://carecapay.com.br",
     },
     manifest: "/manifest.json",
-    icons: {
-        icon: "/assets/favicon.svg",
-    },
 };
 
 export default function RootLayout({
