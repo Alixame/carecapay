@@ -45,14 +45,14 @@ export function Header() {
 
                 <div className="flex items-center gap-5">
                     <a
-                        href="#login"
+                        href="/auth"
                         className="text-sm font-semibold text-[#3B342B] transition-colors hover:text-[#FF7A00]"
                     >
                         Login
                     </a>
 
                     <a
-                        href="#começar"
+                        href="/auth"
                         className="hidden rounded-xl bg-[#FF7A00] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#FF8A00] sm:inline-flex"
                     >
                         Começar agora →
@@ -84,7 +84,7 @@ export function Header() {
                         </a>
                     ))}
                     <a
-                        href="#começar"
+                        href="/auth"
                         className="mt-2 rounded-xl bg-[#FF7A00] px-5 py-3 text-center font-bold text-white"
                     >
                         Começar agora →

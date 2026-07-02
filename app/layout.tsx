@@ -15,9 +15,37 @@ const sans = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-    title: "CarecaPay | Pix, cartão e assinaturas",
-    description:
-        "Receba por Pix, cartão de crédito e assinaturas com uma API simples, painel completo e zero mensalidade.",
+    title: "CarecaPay | Pix, assinaturas e cartão",
+    description: "Receba por Pix, cartão de crédito e assinaturas com uma API simples, painel completo e zero mensalidade.",
+    openGraph: {
+        title: "CarecaPay | Pix, assinaturas e cartão",
+        description: "Receba por Pix, cartão de crédito e assinaturas com uma API simples, painel completo e zero mensalidade.",
+        url: "https://carecapay.com.br",
+        siteName: "CarecaPay",
+        images: [
+            {
+                url: "/assets/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+        locale: "pt-BR",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "CarecaPay | Pix, cartão e assinaturas",
+        description:
+            "Receba por Pix, cartão de crédito e assinaturas com uma API simples, painel completo e zero mensalidade.",
+        images: ["/assets/og-image.png"],
+    },
+    alternates: {
+        canonical: "https://carecapay.com.br",
+    },
+    manifest: "/manifest.json",
+    icons: {
+        icon: "/assets/favicon.svg",
+    },
 };
 
 export default function RootLayout({
